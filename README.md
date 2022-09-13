@@ -8,27 +8,14 @@ Problem Statement:
 
 Twitter is the biggest platform where anybody and everybody can have their views heard. Some of these voices spread hate and negativity. Twitter is wary of its platform being used as a medium  to spread hate. 
 
-You are a data scientist at Twitter, and you will help Twitter in identifying the tweets with hate speech and removing them from the platform. You will use NLP techniques, perform specific cleanup for tweets data, and make a robust model.
+help Twitter in identifying the tweets with hate speech and removing them from the platform. You will use NLP techniques, perform specific cleanup for tweets data, and make a robust model.
 
 Domain: Social Media
 
 Analysis to be done: Clean up tweets and build a classification model by using NLP techniques, cleanup specific for tweets data, regularization and hyperparameter tuning using stratified k-fold and cross validation to get the best model.
 
-Content: 
 
-id: identifier number of the tweet
-
-Label: 0 (non-hate) /1 (hate)
-
-Tweet: the text in the tweet
-
-Tasks: 
-
-1, Load the tweets file using read_csv function from Pandas package. 
-
-2, Get the tweets into a list for easy text cleanup and manipulation.
-
-To cleanup: 
+after performing necessary data cleaning like---
 
 --- Normalize the casing.
 
@@ -44,80 +31,22 @@ To cleanup:
 
 --- Remove ‘#’ symbols from the tweet while retaining the term.
 
-(4),  Extra cleanup by removing terms with a length of 1.
+TF-IDF values for the terms as a feature to get into a vector space model.
 
-(5),  Check out the top terms in the tweets:
+Model building: Ordinary Logistic Regression, Adjusting the class imbalance, Regularization and Hyperparameter tuning applying best parameters on test dataset got F1 score of 0.99.
 
---- First, get all the tokenized terms into one large list.
 
---- Use the counter and find the 10 most common terms.
+                    precision    recall  f1-score   support
 
-(6), Data formatting for predictive modeling:
+                 0       1.00      0.98      0.99      7451
+                 1       0.75      1.00      0.86       540
 
----Join the tokens back to form strings. This will be required for the vectorizers.
+          accuracy                           0.98      7991
+         macro avg       0.87      0.99      0.92      7991
+      weighted avg       0.98      0.98      0.98      7991
 
----Assign x and y.
 
----Perform train_test_split using sklearn.
 
-(7), We’ll use TF-IDF values for the terms as a feature to get into a vector space model.
+confusion_matrix
 
----Import TF-IDF  vectorizer from sklearn.
-
----Instantiate with a maximum of 5000 terms in your vocabulary.
-
----Fit and apply on the train set.
-
----Apply on the test set.
-
-(8), Model building: Ordinary Logistic Regression
-
----Instantiate Logistic Regression from sklearn with default parameters.
-
----Fit into  the train data.
-
----Make predictions for the train and the test set.
-
-(9), Model evaluation: Accuracy, recall, and f_1 score.
-
-Report the accuracy on the train set.
-
----Report the recall on the train set: decent, high, or low.
-
----Get the f1 score on the train set.
-
-(10), Looks like you need to adjust the class imbalance, as the model seems to focus on the 0s.
-
----Adjust the appropriate class in the LogisticRegression model.
-
-(11), Train again with the adjustment and evaluate.
-
----Train the model on the train set.
-
----Evaluate the predictions on the train set: accuracy, recall, and f_1 score.
-
-(12), Regularization and Hyperparameter tuning:
-
----Import GridSearch and StratifiedKFold because of class imbalance.
-
----Provide the parameter grid to choose for ‘C’ and ‘penalty’ parameters.
-
----Use a balanced class weight while instantiating the logistic regression.
-
-(13), Find the parameters with the best recall in cross-validation.
-
----Choose ‘recall’ as the metric for scoring.
-
----Choose a stratified 4 fold cross-validation scheme.
-
----Fit into  the train set.
-
-(14), What are the best parameters?
-
-(15), Predict and evaluate using the best estimator.
-
----Use the best estimator from the grid search to make predictions on the test set.
-
----What is the recall on the test set for the toxic comments?
-
----What is the f_1 score?
+![image](https://user-images.githubusercontent.com/94167271/189967508-5a85797c-29ac-4afd-ad93-861c19f79878.png)
