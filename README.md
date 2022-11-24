@@ -49,3 +49,5 @@ Model building: Ordinary Logistic Regression, Adjusting the class imbalance, Reg
 confusion_matrix
 
 ![image](https://user-images.githubusercontent.com/94167271/189967508-5a85797c-29ac-4afd-ad93-861c19f79878.png)
+
+
