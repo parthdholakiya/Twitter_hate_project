@@ -51,3 +51,39 @@ confusion_matrix
 
 ![image](https://user-images.githubusercontent.com/94167271/189967508-5a85797c-29ac-4afd-ad93-861c19f79878.png)
 
+Since we have used TF-IDF tokenizer, Tf IDf can not handle out of vocablary words(OOV).TL-IDF: Term Frequency-Inverse Document Frequency (td-idf) is a powerful and useful tool, but it has drawbacks that cause it to assign low values to words that are relatively important, to be overly sensitive on the extensive margin, and to be overly resistant on the intensive margin. To overcome this issue, implement Facebook FastText 
+
+![image](https://user-images.githubusercontent.com/94167271/210103669-08c4ffbd-4562-47c6-b0c9-18b05861c0f1.png)
+
+
+
+
+FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers.
+
+Train a fasttext model, it expects labels to be specified with __label__ prefix. We will just create a third column in the dataframe that has __label__ as well as the Tweets
+
+ 
+Pre-processing
+
+  Remove punctuation
+  Remove extra space
+  Make the entire sentence lower case 
+  
+#### After cleaning and preprocessing Tweets data
+  
+"__label__none_hate user user thanks for lyft credit i can't use cause they don't offer wheelchair vans in pdx disapointed getthanked"
+'__label__none_hate bihday your majesty'
+'__label__none_hate factsguide society now motivation'
+
+### After training model  precision and recall respectively are getting around 96%
+
+Prediction on FastText
+
+![FastText val](https://user-images.githubusercontent.com/94167271/210105909-6958ef07-4c1b-4054-bcbb-8c5b2605320a.png)
+
+
+
+ 
+ 
+ 
+
