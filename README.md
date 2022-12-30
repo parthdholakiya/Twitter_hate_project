@@ -66,20 +66,24 @@ Train a fasttext model, it expects labels to be specified with __label__ prefix.
 Pre-processing
 
   Remove punctuation
+  
   Remove extra space
+  
   Make the entire sentence lower case 
   
 #### After cleaning and preprocessing Tweets data
   
 "__label__none_hate user user thanks for lyft credit i can't use cause they don't offer wheelchair vans in pdx disapointed getthanked"
+
 '__label__none_hate bihday your majesty'
+
 '__label__none_hate factsguide society now motivation'
 
 ### After training model  precision and recall respectively are getting around 96%
 
-Prediction on FastText
+****Prediction on FastText****
 
-![FastText val](https://user-images.githubusercontent.com/94167271/210105909-6958ef07-4c1b-4054-bcbb-8c5b2605320a.png)
+![FastText val1](https://user-images.githubusercontent.com/94167271/210106374-611ba325-086a-4a07-815b-5e5630bde18a.png)
 
 
 
