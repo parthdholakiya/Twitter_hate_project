@@ -81,13 +81,42 @@ Pre-processing
 
 ### After training model  precision and recall respectively are getting around 96%
 
+![Screenshot (iknpono](https://user-images.githubusercontent.com/94167271/210107645-b0efe9ae-67d9-4bbc-b839-e417a2fec816.png)
+
+
 ****Prediction on FastText****
 
 ![FastText val1](https://user-images.githubusercontent.com/94167271/210106374-611ba325-086a-4a07-815b-5e5630bde18a.png)
 
 
 
+ #### Install the Required Libraries
  
- 
- 
+    !pip install transformers
+    !pip install datasets
+    !pip install numpy
+    !pip install pandas
 
+
+
+#### HuggingFace requires the data to be as Dataset Dictionary
+
+
+DatasetDict({
+    train: Dataset({
+        features: ['Unnamed: 0', 'label', 'tweet'],
+        num_rows: 25569
+    })
+    test: Dataset({
+        features: ['Unnamed: 0', 'label', 'tweet'],
+        num_rows: 6393
+    })
+})
+
+
+#### Model training
+
+Epoch	 Training Loss	Validation Loss	   Accuracy
+1 	    0.131400	    0.168935	         0.964649
+2	      0.096700	    0.156363	         0.968090
+3	      0.039100	    0.164177	         0.969185
