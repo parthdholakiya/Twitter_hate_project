@@ -82,7 +82,7 @@ Train a fasttext model, it expects labels to be specified with __label__ prefix.
 
 FastText model predicted well. Fasttext uses N_grams wich is separate single words into N_number of words like N_gram=3 Then word=”FastText”  became  (”Fas”,stT”,”Text”) so if in Real world model gets word like “Fast”,” text” the model will calculate cosine similarity between the words which solves out of vocabulary(OOV) problem as certain level. To solve Out of vocabulary we need to use state of the art BERT model.
 
-#### Bert-Hugging Face 
+## Bert-Hugging Face 
 
 ![image](https://user-images.githubusercontent.com/94167271/210153235-e50eccff-48d1-4279-91b0-42eb8e7afff6.png)
 
@@ -117,9 +117,7 @@ DatasetDict({
 
 **** Training on Bert 
 
-Epoch 	Training Loss	  Validation Loss	   Accuracy
- 
-  1   	 0.114600	      0.112367	         0.968090
+![Screenshot 44444555](https://user-images.githubusercontent.com/94167271/210153566-090bc95a-61e5-4e39-aa01-da56d41bb5f1.png)
   
 **** Predicted on Bert
 
