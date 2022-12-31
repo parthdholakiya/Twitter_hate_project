@@ -63,15 +63,7 @@ FastText is an open-source, free, lightweight library that allows users to learn
 Train a fasttext model, it expects labels to be specified with __label__ prefix. We will just create a third column in the dataframe that has __label__ as well as the Tweets
 
  
-Pre-processing
-
-  Remove punctuation
-  
-  Remove extra space
-  
-  Make the entire sentence lower case 
-  
-#### After cleaning and preprocessing Tweets data
+#### After performing Pre-processing steps like Remove punctuation, remove extra space, Make the entire sentence lower case tweets data looks like this.
   
 "__label__none_hate user user thanks for lyft credit i can't use cause they don't offer wheelchair vans in pdx disapointed getthanked"
 
