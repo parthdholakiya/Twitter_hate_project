@@ -118,6 +118,7 @@ DatasetDict({
 ****Prediction on Bert****
 
 Epoch 	Training Loss	  Validation Loss	   Accuracy
+ 
   1   	 0.114600	      0.112367	         0.968090
   
  #### predicted on some T
