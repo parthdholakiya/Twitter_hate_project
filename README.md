@@ -53,9 +53,9 @@ confusion_matrix
 
 Since we have used TF-IDF tokenizer, Tf IDf can not handle out of vocablary words(OOV).TL-IDF: Term Frequency-Inverse Document Frequency (td-idf) is a powerful and useful tool, but it has drawbacks that cause it to assign low values to words that are relatively important, to be overly sensitive on the extensive margin, and to be overly resistant on the intensive margin. To overcome this issue, implement Facebook FastText 
 
+#### (2) FastText
+
 ![image](https://user-images.githubusercontent.com/94167271/210103669-08c4ffbd-4562-47c6-b0c9-18b05861c0f1.png)
-
-
 
 
 FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers.
@@ -71,7 +71,7 @@ Train a fasttext model, it expects labels to be specified with __label__ prefix.
 
 '__label__none_hate factsguide society now motivation'
 
-### After training model  precision and recall respectively are getting around 96%
+### After training model  precision and recall are getting around 96%
 
 ![Screenshot (iknpono](https://user-images.githubusercontent.com/94167271/210107645-b0efe9ae-67d9-4bbc-b839-e417a2fec816.png)
 
@@ -80,15 +80,15 @@ Train a fasttext model, it expects labels to be specified with __label__ prefix.
 
 ![FastText val1](https://user-images.githubusercontent.com/94167271/210106374-611ba325-086a-4a07-815b-5e5630bde18a.png)
 
-FastText model predicted well. Fasttext uses N_grams wich is separate single words into N_number of words like N_gram=3 Then word=”FastText”  became  (”Fas”,stT”,”Text”) so if in Real world model gets word like “Fast”,” text” the model will calculate cosine similarity between the words which solves out of vocabulary(OOV) problem as certain level. To solve Out of vocabulary we need to use state of the art BERT model.
 
-#### Bert-Hugging Face 
+FastText model predicted well. Fasttext uses N_grams which is separate single words into N_number of words like N_gram=2 Then word=” COLD” became ("CO","OL","LD") so if in Real world model gets word like similar to these words the model will calculate cosine similarity between the words. which solves out of vocabulary (OOV) problem as certain level. To solve Out of vocabulary we need to use state of the art BERT model.
+
+#### (3) Bert-Hugging Face 
 
 ![image](https://user-images.githubusercontent.com/94167271/210153235-e50eccff-48d1-4279-91b0-42eb8e7afff6.png)
 
 
-BERT, which stands for Bidirectional Encoder Representations from Transformers, is based on Transformers, a deep learning model in which every output element is connected to every input element, and the weightings between them are dynamically calculated based upon their connection.
-When an unseen word is presented to BERT, it will be sliced into multiple subwords, even reaching character subwords if needed. That is how it deals with unseen(OOV) words.
+BERT, which stands for Bidirectional Encoder Representations from Transformers, is based on Transformers, a deep learning model in which every output element is connected to every input element, and the weightings between them are dynamically calculated based upon their connection. When an unseen word is presented to BERT, it will be sliced into multiple subwords, even reaching character subwords if needed. That is how it deals with unseen(OOV) words.
 
 
  #### Install the Required Libraries
