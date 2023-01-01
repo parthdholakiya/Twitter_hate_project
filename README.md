@@ -115,11 +115,11 @@ When an unseen word is presented to BERT, it will be sliced into multiple subwor
             })
 
 
-#### Training on Bert 
+#### Training on Bert: Model reach accuracy at 96 %
 
 ![Screenshot 44444555](https://user-images.githubusercontent.com/94167271/210153566-090bc95a-61e5-4e39-aa01-da56d41bb5f1.png)
   
-#### Predicted on Bert
+#### Validate Bert model by testing on Tweets
 
 ![Screenshot (h](https://user-images.githubusercontent.com/94167271/210153323-5b6e683f-7367-4869-9c2e-cd405e2b36af.png)
 
