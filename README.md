@@ -33,6 +33,8 @@ after performing necessary data cleaning like---
 
 TF-IDF values for the terms as a feature to get into a vector space model.
 
+linl for tf idf https://www.youtube.com/watch?v=vZAXpvHhQow
+
 Model building: Ordinary Logistic Regression, Adjusting the class imbalance, Regularization and Hyperparameter tuning applying best parameters on test dataset got F1 score of 0.99.
 
 
