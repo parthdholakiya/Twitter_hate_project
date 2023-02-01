@@ -119,6 +119,7 @@ BERT, which stands for Bidirectional Encoder Representations from Transformers, 
                 })
             })
 
+![image](https://user-images.githubusercontent.com/94167271/216073219-f3445341-aa68-4548-8a48-1f55abc29acd.png)
 
 #### Training on Bert: Model reach accuracy at 96 %
 
