@@ -88,6 +88,9 @@ FastText model predicted well. Fasttext uses N_grams which is separate single wo
 
 #### (3) Bert-Hugging Face 
 
+![image](https://user-images.githubusercontent.com/94167271/216076283-fbbbe926-18f5-4511-9874-7b86041489ef.png)
+
+
 ![image](https://user-images.githubusercontent.com/94167271/212979447-67b2c8bd-070f-4de0-83b7-27f59d756f94.png)
 
 
