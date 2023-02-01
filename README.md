@@ -99,9 +99,6 @@ FastText model predicted well. Fasttext uses N_grams which is separate single wo
 
 ![image](https://user-images.githubusercontent.com/94167271/212979447-67b2c8bd-070f-4de0-83b7-27f59d756f94.png)
 
-
-
-
 BERT, which stands for Bidirectional Encoder Representations from Transformers, is based on Transformers, a deep learning model in which every output element is connected to every input element, and the weightings between them are dynamically calculated based upon their connection. When an unseen word is presented to BERT, it will be sliced into multiple subwords, even reaching character subwords if needed. That is how it deals with unseen(OOV) words.
 
 
