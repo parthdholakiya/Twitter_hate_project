@@ -60,8 +60,14 @@ Since we have used TF-IDF tokenizer, Tf IDf can not handle out of vocablary word
 
 ![image](https://user-images.githubusercontent.com/94167271/210103669-08c4ffbd-4562-47c6-b0c9-18b05861c0f1.png)
 
-
 FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers.
+
+fastText provides two models for computing word representations: skipgram and cbow ('continuous-bag-of-words'). The skipgram model learns to predict a target word thanks to a nearby word. On the other hand, the cbow model predicts the target word according to its context.
+
+
+![image](https://user-images.githubusercontent.com/94167271/216078560-ce7d47f8-238a-42be-89af-69d94a3d4732.png)
+
+![image](https://user-images.githubusercontent.com/94167271/216078092-27405027-c55f-416b-8047-11db9e88218f.png)
 
 Train a fasttext model, it expects labels to be specified with __label__ prefix. We will just create a third column in the dataframe that has __label__ as well as the Tweets
 
