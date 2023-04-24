@@ -2,8 +2,8 @@
 
 Using NLP and ML, make a model to identify hate speech (racist or sexist tweets) in Twitter.
 
+![image](https://user-images.githubusercontent.com/94167271/234070679-933f1193-1438-4818-a79a-4ab0997b5014.png)
 
-![download (1)](https://user-images.githubusercontent.com/94167271/189394381-23b1e157-81ae-453d-b9d4-b41212975d8c.png)
 
 Problem Statement: 
 
