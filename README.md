@@ -1,6 +1,6 @@
 # Twitter Hate Speech Detection using Hugging Face BERT Fine-Tuning
 
-## Overview
+## Overview 
 
 This project addresses hate speech on Twitter using Hugging Face's BERT model, a powerful tool for natural language understanding. The goal is to fine-tune the model for hate speech detection in the informal and unstructured nature of tweets.
 
